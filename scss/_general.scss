@@ -1,0 +1,166 @@
+/**** general styles ******/
+
+body {
+    font-family: "Avenir";
+    font-weight: 400;
+    color: $black;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.spoof-font,
+.btn {
+    font-family: "Spoof" !important;
+    font-weight: 500;
+}
+
+.container {
+    width: 100%;
+    max-width: 1237px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+/*** texts size ****/
+
+h1 {
+    font-size: 64px;
+    line-height: 107.5%;
+}
+
+h2 {
+    font-size: 41px;
+    line-height: 130%;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 107.5%;
+}
+
+h4 {
+    font-size: 21px;
+    line-height: 130%;
+}
+
+.text-small {
+    font-size: 15px;
+}
+
+
+/**** page texts styles *****/
+
+.text {
+    &-purple {
+        color: $purple !important
+    }
+    &-brown {
+        color: $brown !important;
+    }
+    &-yellow {
+        color: $yellow !important;
+    }
+    &-secondary {
+        color: $black !important;
+    }
+}
+
+
+/**** background styles *****/
+
+.bg {
+    &-purple {
+        background: $purple
+    }
+    &-brown {
+        background: $brown;
+    }
+    &-yellow {
+        background: $yellow;
+    }
+    &-secondary {
+        background: $black;
+    }
+}
+
+
+/**** buttons styles *****/
+
+.btn {
+    &-warning {
+        background: $yellow;
+        border-color: $yellow;
+        color: $black;
+        border-radius: 41px;
+        &:hover {
+            background: $brown;
+            border-color: $brown;
+            color: #fff
+        }
+    }
+}
+
+
+/**** accordion-item style *******/
+
+.accordion {
+    .accordion-item {
+        background: $yellow;
+        border-radius: 23px;
+        border: 0;
+        .accordion-button {
+            padding: 24px 30px;
+            background-color: transparent;
+            font-family: 'Spoof';
+            font-weight: 500;
+            font-size: 20.62px;
+            line-height: 91.7%;
+            color: $black;
+            border-radius: 23px 23px 0 0;
+            box-shadow: none;
+            outline: none;
+            &::after {
+                width: 50px;
+                height: 50px;
+                background-image: url('../images/home/add.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            &.collapsed {
+                &::after {
+                    background-image: url('../images/home/add.svg');
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                }
+            }
+        }
+        .accordion-body {
+            padding: 1rem 1.25rem;
+            padding: 24px 30px;
+            border-top: 1px solid rgba($brown, 0.19);
+        }
+    }
+}
+
+
+/*** labels style ****/
+
+.users-types {
+    span {
+        font-family: 'Spoof';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        color: #FFFFFF;
+        background: $black;
+        padding: 9px 11px 8px 11px;
+        border-radius: 29px;
+    }
+}
