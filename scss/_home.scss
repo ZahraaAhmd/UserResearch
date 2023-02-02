@@ -24,7 +24,7 @@
         }
     }
     &-partners {
-        padding-bottom: 103px;
+        padding-bottom: 124px;
         .row {
             max-width: 608px;
             margin: 0 auto;
@@ -35,20 +35,39 @@
             font-size: 14px;
             line-height: 107.5%;
             color: #000000;
+            display: block;
+            text-align: center;
         }
     }
     &-features {
         position: relative;
-        padding: 283px 0 68px 0;
-        background: url("../images/home/img1.png") no-repeat;
-        background-size: 80% calc(100% - 40px);
-        background-position: left 0 top;
+        padding: 283px 0 30px 0;
         margin-bottom: -100px;
+        .user-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+        }
         .promotion-img {
             position: absolute;
-            left: 0;
-            top: -70px;
             z-index: 99;
+            background: $yellow url("../images/home/UserResearch2.svg") center center;
+            background-repeat: repeat-x;
+            width: 796.37px;
+            height: 50px;
+            left: -136px;
+            top: 230px;
+            transform: rotate(-45deg);
+            @media(max-width: 1560px) {
+                left: -185px;
+                top: 207px;
+            }
+            @media(max-width: 1350px) {
+                left: -212px;
+                top: 190px;
+                width: 720.37px;
+            }
         }
         .absolute-block {
             content: "";
@@ -61,8 +80,11 @@
             transform: rotate(-6deg);
             position: absolute;
             bottom: -40px;
-            right: -15px;
+            right: -30px;
             left: auto;
+            @media(max-width: 1350px) {
+                max-width: 95%;
+            }
         }
         .container {
             max-width: 1000px;
@@ -189,7 +211,7 @@
     &-faq {
         padding-top: 116px;
         padding-bottom: 98px;
-        h2 {
+        h2:not(.accordion-header) {
             margin-bottom: 41px;
         }
     }
