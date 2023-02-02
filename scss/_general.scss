@@ -164,3 +164,44 @@ h4 {
         border-radius: 29px;
     }
 }
+
+
+/**** slick slider style ****/
+
+.slick-slider {
+    .slick-track {
+        display: flex !important;
+    }
+    .slick-slide {
+        padding: 0 12px;
+        height: inherit !important;
+    }
+    .slick-dots {
+        bottom: -50px;
+        li {
+            width: auto;
+            padding: 0;
+            button {
+                width: 14px;
+                height: 13px;
+                border-radius: 50%;
+                background: rgba($brown, 0.42);
+                opacity: 1;
+                border: 0;
+                margin: 0 5px;
+                padding: 0;
+                &::before {
+                    display: none
+                }
+            }
+            &.slick-active {
+                button {
+                    width: 25px;
+                    height: 9px;
+                    background: $brown;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}

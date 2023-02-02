@@ -12,8 +12,14 @@
                 color: $black;
                 font-family: "Avenir-medium";
                 padding: 15px 20px;
+                &:hover {
+                    color: $brown
+                }
                 &.btn {
-                    padding: 15px 27px
+                    padding: 15px 27px;
+                    &:hover {
+                        color: #fff !important;
+                    }
                 }
             }
         }

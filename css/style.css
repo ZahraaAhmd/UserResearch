@@ -173,6 +173,47 @@ h4 {
   border-radius: 29px;
 }
 
+/**** slick slider style ****/
+.slick-slider .slick-track {
+  display: flex !important;
+}
+
+.slick-slider .slick-slide {
+  padding: 0 12px;
+  height: inherit !important;
+}
+
+.slick-slider .slick-dots {
+  bottom: -50px;
+}
+
+.slick-slider .slick-dots li {
+  width: auto;
+  padding: 0;
+}
+
+.slick-slider .slick-dots li button {
+  width: 14px;
+  height: 13px;
+  border-radius: 50%;
+  background: rgba(247, 144, 109, 0.42);
+  opacity: 1;
+  border: 0;
+  margin: 0 5px;
+  padding: 0;
+}
+
+.slick-slider .slick-dots li button::before {
+  display: none;
+}
+
+.slick-slider .slick-dots li.slick-active button {
+  width: 25px;
+  height: 9px;
+  background: #F7906D;
+  border-radius: 20px;
+}
+
 /***** header style *****/
 .navbar {
   background-color: transparent !important;
@@ -188,8 +229,16 @@ h4 {
   padding: 15px 20px;
 }
 
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #F7906D;
+}
+
 .navbar .navbar-nav .nav-item .nav-link.btn {
   padding: 15px 27px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.btn:hover {
+  color: #fff !important;
 }
 
 .navbar .navbar-nav.ms-auto .nav-item .nav-link.text-underline {
@@ -647,6 +696,9 @@ footer ul.social-links li a:hover {
     width: 276px;
     display: block;
     margin: 0 auto 40px auto;
+  }
+  .UR-works .work-steps.slick-slider {
+    margin-bottom: 100px;
   }
 }
 
