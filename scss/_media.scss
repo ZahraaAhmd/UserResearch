@@ -11,6 +11,7 @@
 @media(max-width:1200px) {
     .UR-hero {
         .img-fluid {
+            width: 100%;
             max-width: 320px
         }
     }
@@ -175,6 +176,22 @@
     }
     h3 {
         font-size: 19px;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .navbar-brand {
+            img {
+                max-width: 180px
+            }
+        }
+        .navbar-toggler img {
+            width: 18px;
+        }
     }
     .UR-hero .inner-box {
         a {
