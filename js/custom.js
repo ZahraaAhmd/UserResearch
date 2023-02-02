@@ -1,3 +1,18 @@
+$(document).ready(function() {
+    $(".navbar-toggler").click(function() {
+        $('.navbar .overlay').toggleClass('d-none');
+    });
+    /***
+     *   AOS animation 
+     */
+    AOS.init({
+        duration: 1000,
+        disable: 'mobile', // values from 0 to 3000, with step 50ms
+        once: true,
+    });
+
+});
+
 /**** 
  * slack slider  
  * events slider 
@@ -27,14 +42,4 @@ $('.work-steps').slick({
             }
         }
     ]
-});
-$(document).ready(function() {
-    /***
-     *   AOS animation 
-     */
-    AOS.init({
-        duration: 1000,
-        disable: 'mobile', // values from 0 to 3000, with step 50ms
-        once: true,
-    });
 });

@@ -15,14 +15,27 @@
     <!-- start header block -->
 
     <nav class="navbar navbar-expand-lg bg-light">
+        <div class="overlay d-none"></div>
         <div class="container">
             <a class="navbar-brand" href="#"><img src="images/general/logo.svg"> </a>
-            <!--  <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+            <div>
+                <button class="navbar-toggler open-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <img src="images/general/sm-menu-btn.svg">
+                        </span>
                     </button>
-            </div> -->
+            </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="d-flex d-lg-none close-menu align-items-center justify-content-between">
+                    <a href="#"><img src="images/general/cat.png"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <img src="images/general/close.svg">
+                        </span>
+                    </button>
+                </div>
+
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Story</a>
@@ -337,4 +350,5 @@
     <script src="js/jquery.min.js "></script>
     <script src="js/popper.min.js "></script>
     <script src="js/bootstrap.min.js "></script>
+    <script src="js/custom.js "></script>
 </body>
